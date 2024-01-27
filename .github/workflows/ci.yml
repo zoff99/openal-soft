@@ -57,6 +57,13 @@ jobs:
         cd build
         mkdir archive
         mkdir archive/router
+        pwd
+        ls -al
+        ls -al include/AL
+        cp ${{matrix.config.build_type}}/OpenAL32.lib archive/router
+        cp ${{matrix.config.build_type}}/OpenAL32.exp archive/router
+        cp ${{matrix.config.build_type}}/soft_oal.lib archive
+        cp ${{matrix.config.build_type}}/soft_oal.exp archive
         cp ${{matrix.config.build_type}}/soft_oal.dll archive
         cp ${{matrix.config.build_type}}/OpenAL32.dll archive/router
 
