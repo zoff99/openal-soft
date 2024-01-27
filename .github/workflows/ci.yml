@@ -59,9 +59,9 @@ jobs:
         mkdir archive/router
         mkdir AL
         pwd
-        ls -al
-        ls -al include/AL
-        cp include/AL/* AL
+        ls -al ../
+        ls -al ../include/AL
+        cp ../include/AL/* AL
         cp ${{matrix.config.build_type}}/OpenAL32.lib archive/router
         cp ${{matrix.config.build_type}}/OpenAL32.exp archive/router
         cp ${{matrix.config.build_type}}/soft_oal.lib archive
