@@ -19,6 +19,7 @@ jobs:
               -DALSOFT_BUILD_ROUTER=ON \
               -DALSOFT_REQUIRE_WINMM=ON \
               -DALSOFT_REQUIRE_DSOUND=ON \
+              -DLIBTYPE=static \
               -DALSOFT_REQUIRE_WASAPI=ON",
             build_type: "Release"
           }
